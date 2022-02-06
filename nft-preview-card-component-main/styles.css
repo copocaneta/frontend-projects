@@ -159,7 +159,7 @@ figure {
 }
 
 .nft-image-container:hover .nft-overlay {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .nft-image-container:hover .view-nft {
