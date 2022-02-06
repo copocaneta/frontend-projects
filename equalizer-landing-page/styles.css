@@ -15,6 +15,10 @@ body {
   color: var(--mirage);
   background-image: url(assets/bg-main-mobile.png);
   background-position: 50px -240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -23,8 +27,27 @@ h1 {
   line-height: 48px;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper {
   margin: 40px 24px;
+  width: 327px;
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-text > p {
+  width: 327px;
+}
+
+.app-screenshot > img {
+  width: 208px;
 }
 
 /* Tablet */
@@ -37,6 +60,47 @@ h1 {
     font-weight: bold;
     font-size: 64px;
     line-height: 64px;
+    letter-spacing: -0.727273px;
+  }
+
+  .container {
+    background-image: url(assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: 111% -4%;
+  }
+
+  .wrapper {
+    width: 696px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 520px auto;
+  }
+  .hero-text {
+    width: 520px;
+  }
+
+  .hero-image {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -102px;
+  }
+  .hero-image > img {
+    width: 266px;
+  }
+  .pricing {
+    width: 399px;
+  }
+  .app-screenshot > img {
+    width: 270px;
+  }
+  footer {
+    width: 696px;
+  }
+  .footer-copyright {
+    width: 366px;
   }
 }
 
@@ -45,6 +109,11 @@ h1 {
 @media (min-width: 1440px) {
   body {
     background-image: url(assets/bg-main-desktop.png);
+  }
+  .container {
+    background-image: url(assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
   }
   h1 {
     font-weight: bold;
