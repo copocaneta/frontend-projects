@@ -27,6 +27,10 @@ h1 {
   line-height: 48px;
 }
 
+header {
+  margin: auto 24px;
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -34,8 +38,13 @@ h1 {
 }
 
 .wrapper {
-  margin: 40px 24px;
-  width: 327px;
+  /* margin: 40px 24px; */
+  margin-top: 40px;
+  width: 375px;
+}
+
+.hero {
+  margin: auto 24px;
 }
 
 .hero-image {
@@ -46,8 +55,165 @@ h1 {
   width: 327px;
 }
 
+pricing-wrapper {
+  position: relative;
+}
+
+.pricing-box {
+  margin-top: 150px;
+  width: 100%;
+  background-color: var(--mirage);
+  background-image: url(assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-size: 280px;
+  background-position: top center;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
 .app-screenshot > img {
+  position: relative;
+  top: -120px;
   width: 208px;
+}
+
+.pricing {
+  background-color: var(--bittersweet);
+  border-radius: 12px;
+  color: var(--springwood);
+  width: 375px;
+  padding: 48px 36px;
+  box-sizing: border-box;
+}
+
+.pricing-wrapper {
+  margin-top: -55px;
+}
+
+.pricing > h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.meta-pricing {
+  margin-top: 36px;
+  margin-bottom: 32px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.meta-price-value {
+  font-size: 65px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+.meta-price-period {
+  margin-left: 16px;
+}
+.icon {
+  width: 17px;
+  height: 20px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-right: 8px;
+}
+.icon-android {
+  background-image: url(assets/icon-android.svg);
+}
+.icon-ios {
+  background-image: url(assets/icon-apple.svg);
+}
+
+.button {
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 16px;
+  display: block;
+  width: 100%;
+  border-style: none;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.button-ios {
+  background-color: var(--mirage);
+  color: var(--springwood);
+}
+.button-android {
+  background-color: var(--springwood);
+  color: var(--mirage);
+}
+
+footer {
+  padding: 0 24px;
+  margin-bottom: 60px;
+}
+
+.footer-contact > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--mirage);
+}
+
+.footer-copyright {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.footer-socialmedia {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.iconsocial {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.linksocial:hover .iconsocial {
+  /*
+    thanks to this article:
+    https://css-tricks.com/change-color-of-svg-on-hover/
+    I learned how to change svg's fill colors on bg-images
+    applying filters. Credit goes to Barrett Sonntag and his
+    tool here:
+    https://codepen.io/sosuke/pen/Pjoqqp
+    */
+  filter: invert(61%) sepia(27%) saturate(4118%) hue-rotate(326deg)
+    brightness(101%) contrast(96%);
+}
+
+.icon-facebook {
+  background-image: url(assets/icon-facebook.svg);
+}
+.icon-instagram {
+  background-image: url(assets/icon-instagram.svg);
+}
+.icon-twitter {
+  background-image: url(assets/icon-twitter.svg);
 }
 
 /* Tablet */
@@ -81,6 +247,11 @@ h1 {
     width: 520px;
   }
 
+  .hero-text > p {
+    width: 514px;
+    font-size: 18px;
+  }
+
   .hero-image {
     display: block;
     position: absolute;
@@ -91,9 +262,16 @@ h1 {
     width: 266px;
   }
   .pricing {
+    position: absolute;
     width: 399px;
+    top: 97%;
+    margin-left: -126px;
+  }
+  .pricing-wrapper {
+    margin: 48px 48px;
   }
   .app-screenshot > img {
+    left: -168px;
     width: 270px;
   }
   footer {
@@ -119,5 +297,47 @@ h1 {
     font-weight: bold;
     font-size: 88px;
     line-height: 88px;
+    margin: 127px 0 0 0;
+  }
+  .wrapper {
+    width: 1100px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 899px auto;
+  }
+  .hero-text {
+    width: 899px;
+  }
+
+  .hero-text > p {
+    width: 825px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .pricing {
+    position: absolute;
+    width: 446px;
+    height: 625px;
+    top: 89%;
+    margin-left: 36px;
+    font-size: 20px;
+  }
+  .pricing > h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+  }
+  .pricing-wrapper {
+    margin: 58px 54px;
+  }
+  .app-screenshot > img {
+    left: -278px;
+    width: 280px;
+  }
+  .pricing-box {
+    background-size: 312px;
+    background-position: 334px -40px;
   }
 }
