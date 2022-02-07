@@ -142,6 +142,7 @@ header {
   display: block;
   width: 100%;
   border-style: none;
+  cursor: pointer;
 }
 
 .button-text {
@@ -156,9 +157,18 @@ header {
   background-color: var(--mirage);
   color: var(--springwood);
 }
+
+.button-ios:hover {
+  background-color: var(--aquamarineblue);
+}
+
 .button-android {
   background-color: var(--springwood);
   color: var(--mirage);
+}
+
+.button-android:hover {
+  background-color: var(--orange);
 }
 
 footer {
@@ -227,6 +237,7 @@ footer {
     font-size: 64px;
     line-height: 64px;
     letter-spacing: -0.727273px;
+    margin-bottom: 25px;
   }
 
   .container {
@@ -375,6 +386,7 @@ footer {
     width: 280px;
   }
   .pricing-box {
+    margin-top: 231px;
     background-size: 312px;
     background-position: 334px -40px;
     height: 600px;
