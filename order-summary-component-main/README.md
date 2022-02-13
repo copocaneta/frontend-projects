@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-order-summary-component-built-with-flex-and-grid-krGqa46fB](https://www.frontendmentor.io/solutions/responsive-order-summary-component-built-with-flex-and-grid-krGqa46fB)
+- Live Site URL: [https://copocaneta.github.io/frontend-projects/order-summary-component-main/](https://copocaneta.github.io/frontend-projects/order-summary-component-main/)
 
 ## My process
 
